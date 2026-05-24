@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RAG Chat</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="logo-wrap">
+          <img src="/logo.png" alt="Logo" class="logo" />
+        </div>
+        <div class="expert">
+          <div class="expert-title">EXPERT ON</div>
+          <ul class="expert-list">
+            <li>AlexNet</li>
+            <li>VGG</li>
+            <li>ResNet</li>
+            <li>Deepseek</li>
+            <li>GPT-3</li>
+            <li>BLOOM</li>
+            <li>Transformer</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="chat">
+        <div id="messages" class="messages" aria-live="polite"></div>
+        <form id="ask-form" class="ask">
+          <input id="question" type="text" placeholder="Ask me anything" autocomplete="off" />
+          <button type="submit">Send</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
